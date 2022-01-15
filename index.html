@@ -25,7 +25,7 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -49,15 +49,15 @@
 
       </ul>
 
-    </nav>
+    </nav> <!--nav ending-->
 
-  </div>  <!--faq and about end-->
+  </div>  <!--Header-divider ending-->
 
 </header>
 
 <main>
 
-  <section class="hero-section">
+  <section class="hero-area">
 
       <div class="main-image"> <!--image of hero starts-->
 
@@ -72,7 +72,7 @@
 
   <aside>
 
-    <div class="button-text"> <!--button text starts-->
+    <div class="form-description"> <!--button text starts-->
 
       <p>Want to join the next retreat?</p>
 
@@ -82,7 +82,7 @@
 
     </div> <!--button text ends-->
 
-    <div class="button"> <!---sign-up form and button start-->
+    <div class="form"> <!---newsletter sign-up form start-->
 
       <input type="text" name="name" value="email address">
       <input type="buttom" value="Download Itinerary">
@@ -91,54 +91,67 @@
 
     <div class="itinerary">
 
-      <p>DOWNLOAD ITINERARY</P>
+
 
     </div> <!---sign-up form and button end -->
 
   </aside>
 
-  <section="top-section">
+  <section class="features">
 
-      <div>
+    <div class="content-wrapper">
+  <!--Add your features content here-->
+</section>
+  <section class="features-items">  <!---Start of Features-items-->
+      <div> <!--header-->
         <p>Have the work week you always dreamed of - without the bad wifi.</p>
       </div>
 
-      <div>   <!--teepee-->
-        <p>located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
-      </div>
 
-      <div> <!--bed-->
-        <p>12 private with bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
-      </div>
+      <article>
+        <p class="fontawesome-icon"></p>  <!--teepee-->
+        <p class="features-item-description">Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
+      </article>
 
-      <div>  <!--knife and fork-->
-        <p>Private chef team providing on demand meals - just like your team kitchen.</p>
-      </div>
+      <article> <!--bed-->
+        <p class="fontawesome-icon"></p>
+        <p class="features-item-description">12 private with bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
+      </article>
 
-      <div>  <!--footprints-->
-        <p>5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.</p>
-      </div>
+      <article>
+        <p class="fontawesome-icon"></p>  <!--knife and fork-->
+        <p class="features-item-description">Private chef team providing on demand meals - just like your team kitchen.</p>
+      </article>
 
-      <div> <!--smiley face-->
-        <p>Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
-      </div>
+      <article>
+        <p class="fontawesome-icon"></p>  <!--footprints-->
+        <p class="features-item-description">5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.</p>
+      </article>
 
-      <div>  <!--wifi-->
-        <p>Dedicated computer room for times you must wifi</p>
-      </div>
+      <article>
+        <p class="fontawesome-icon"></p><!--smiley face-->
+        <p class="features-item-description">Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
+      </article>
 
-  </section> <!---end of top section-->
+      <article>
+        <p class="fontawesome-icon"></p>  <!--wifi-->
+        <p class="features-item-description">Dedicated computer room for times you must wifi</p>
+      </article>
 
-  <section class="bottom-section">
-      <!--green group class section starts-->
+    </div> <!--end of content-wrapper-->
 
+  </section> <!---end of features section-->
 
-      <div class="group-main-title">  <!--group header text starts-->
+  <section class="reviews">
+      <!--reviews starts-->
+
+      <div class="content-wrapper">  <!--group header text starts-->
 
             <h2>Be a better team in 5 days, like these.</h2>
 
-      </div> <!--group title text-->
+      </div> <!--content-wrapper-->
 
+    <article>
 
       <div class="group-image"><img src="img/download.jpg" alt="group shot" /></div>
             <!--green group section starts-->
@@ -158,8 +171,10 @@ Please join us so we can help you with any issues
 your company has, or just to build your staffs confidience
 and trust levels.</p>
 
-      </div>
+       </div>
 
+     </article>
+    </section>
 </main>
 
 <footer>
