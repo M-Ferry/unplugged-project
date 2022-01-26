@@ -85,7 +85,93 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   =========================================================================
+   = */
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+
+.hero-area {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.aside {
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+
+.features {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.features feature-items {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.mission {
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+
+.contact-section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.faq {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.faq content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+
+
+footer .social p {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
+footer .social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +346,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
