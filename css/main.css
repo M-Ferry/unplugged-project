@@ -93,7 +93,13 @@ textarea {
   margin: 50px 0;
 }
 
-/*---------------------BASE HEADER-----*/
+img {
+  max-width: 100%;
+}
+
+
+
+/*---------------------BASE HEADER-STYLES----*/
 
 
 header,
@@ -113,7 +119,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0:auto;
+  margin: 0;
 
 }
 
@@ -130,7 +136,7 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -138,11 +144,18 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 50%;
 }
 
+.feature-items h2 {
+  width: 75%;
+  justify-content: row wrap;
+}
+
+
+
 footer {
-  flex-direction: column;
+  flex-direction: row;
 }
 
 footer p {
@@ -172,21 +185,17 @@ footer .social-icons p {
   align-items: center;
 }
 
-
-
 footer .copyright {
   margin: 20px 0;
 
 }
-
-
 
 /*-------------------Mobile Styles - Homepage ------*/
 
 /*--HERO AREA--*/
 
 
-.hero-area {
+.hero-area {   /* mobile styles */
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
@@ -194,7 +203,7 @@ footer .copyright {
 
 /* ASIDE */
 
-aside {
+aside {      /* mobile styles */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,43 +211,42 @@ aside {
 
 }
 
-
-
 /*  FEATURES */
 
-.features {
+.features {    /* mobile styles */
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 
 }
 
-.features h2 {
+.features h2 {      /* mobile styles */
   margin-bottom: 60px;
 
 }
 
-.features article  {
+.features article  {        /* mobile styles */
   width: 63%;
   margin: 30px 0;
 
+
 }
 
-.features .features-items {
+.features .features-items {        /* mobile styles */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.features p {
+.features p {   /* mobile styles */
   margin: 0;
 }
 
-/*----/* REVIEWs  */
+/*----/* REVIEWs  mobile styles*/
 
 
-.reviews {
+.reviews {   /* mobile styles */
   display: flex;
   width: 75%;
   flex-flow: row wrap;
@@ -246,18 +254,18 @@ aside {
 }
 
 
-.reviews h2 {
+.reviews h2 {                /* mobile styles */
   margin-bottom: 40px;
 }
 
-.reviews h3 {
+.reviews h3 {       /* mobile styles */
   width: 55%;
   margin: 20px 0;
 }
 
-/*============ABOUT=====*/
+/*============ABOUT====Mobile=*/
 
-.mission {
+.mission {           /* mobile styles */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,29 +273,29 @@ aside {
 
 }
 
-.contact-section {
+.contact-section {     /* mobile styles */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.contact-content p {
+.contact-content p {     /* mobile styles */
   margin: 0;
 
 }
 
-/*===FAQ=====*/
+/*===FAQ===mobile==*/
 
 
-.faq {
+.faq {            /* mobile styles */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.faq .content-wrapper {
+.faq .content-wrapper {     /* mobile styles */
   margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
@@ -296,28 +304,208 @@ aside {
 }
 
 .faq h2 {
-  margin-bottom: 40px;
+  margin-bottom: 40px;         /* mobile styles */
 
 }
 
-.faq-content {
+.faq-content {                /* mobile styles */
   margin-bottom: 50px;
+  flex-basis:             /*notes say add it not how much*/
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+ /*Tablet styles here!!!*/
+
+/* General styles */
+
+/* Home Page Tablet */
+
+.content-wrapper {    /*notes in webpage */
+    max-width: 640px;
+    margin: 60px 0;       /* tablet  */
+}
+
+/* Header Tablet */
+
+header {          /* tablet  */
+  justify-content: space-around;  /* my guess in notes though*/
+  height: 110px;
+}
+
+header .content-wrapper {   /* notes says needs width */
+    width: 100%;
+    justify-content: space-between;      /* tablet in notes this line */
+    margin: 15px;
+}
+
+header nav {         /* tablet  */
+  width: 50%;  /* notes says needs width */
+  display: flex;
+  flex-direction: row;
+
+}
+
+header nav ul {    /* tablet  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;     /* tablet  justify contents in notes not how much */
+    flex-wrap: nowrap;
+    flex-flow: row;
+    width: 50%;
+}
+
+header nav ul li {   /* tablet */
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-divider {    /* tablet  */
+   display: none;   /* per notes this one line */
+
+}
+
+/* Hero Area */   /* tablet  */
+
+.hero-area {
+  height: 604px;
+
+}
+
+
+
+.main-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: 60px;
+  line-height: 1em;
+
+}
+
+
+/* Aside */
+
+aside .content-wrapper {    /* tablet  */
+  display: flex;     /* in notes exactly  */
+  justify-content: space-between;  /* justify content in notes not how much */
+  flex-wrap: wrap;
+  flex-flow: row wrap;  /* in notes not how much */
+  margin: 60px 0;   /* notes this one line  */
+
+}
+          /* tablet  */
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+    width: 90%;    /* notes says need width   */
+    margin: 0;   /* notes says need margin 0  */
+}
+
+/* FEATURES */
+
+.features article {    /* tablet  */
+  display: flex;  /* in notes completely */
+  justify-content: center;   /* in notes not how much */
+  align-items: center;
+  flex-flow: row wrap;     /*in notes not how much*/
+  flex-basis: 1;      /* notes add this but not how much */
+
+}
+
+.features .features-item-description {    /* tablet  */
+    width: 90%;    /* notes on webpage says must have */
+}
+
+  /* revIEW */      /* tablet  */
+.reviews article {
+  display: flex;   /* in notes complete*/
+  justify-content: space-between;      /* in notes not how much*/
+}
+
+
+.reviews article div {    /* tablet  */
+    width:   /* notes on webpage says must have */
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER Tablet styles */
+
+footer .content-wrapper {    /* tablet  */
+  width: 100%;  /* notes said width w/ a blank i put in 100% */
+  margin: 100px 0;
+}
+
+.footer-content {  /* nothing in this one */
+  display: flex;   /* tablet in notes complete  */
+  justify-content:     /* in notes just not how much */
+  align-items: center;  /* also in notes not how much */
+}
+
+footer .contact {   /* tablet  */
+  margin-bottom: 0;  /* notes said margin-bottom 0 */
+
+}
+
+footer .copyright {    /* tablet  */
+    width: 90%;             /* notes said must have width,didn't say how much
+
+}
+
+
+/*===ABOUT PAGE=====Tablet screen=*/
+
+.mission-content h1 {   /*make sure these are correct*/
+  display: flex;   /* display but not what*/
+  justify-content: space-between;    /* tablet exactly like this */
+  align-items: center;    /* notes add this but not how much */
+}
+
+.mission-content p {    /* tablet  */
+  width: 100%;
+  justify-content: space-between;
+  allgn-items: flex-start;                 /* notes add but not how much */
+
+}
+
+.contact-section .content-wrapper h2 {   /* tablet  */
+    width: 90%;          /* width added but not how much */
+
+}
+
+.contact-content {    /* tablet  */
+    display: flex;          /* display not what*/
+    justify-content: center;   /* justify not what*/
+    align-items: center;  /*also align not what*/
+
+}
+
+/*=====FAQ Page===for tablets=*/
+
+.faq .content-wrapper {        /* tablet  */
+  justify-content: space-between; /* completely spelled out in notes */
+}
+
+.faq-content {             /* tablet  */
+  flex-basis: 40%;           /* % in notes */
+}
+
+.faq h2 {                   /* tablet  */
+  width: 100%;         /* 100% added in notes */
+}
+
 
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+}
 
 
 
@@ -409,9 +597,9 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
 }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
